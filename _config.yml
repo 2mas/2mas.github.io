@@ -1,0 +1,6 @@
+title: 2mas devblog
+description: Blog about development and related stuff
+url: 2mas.github.io
+baseurl: ""
+permalink: /:title/
+theme: jekyll-theme-cayman
