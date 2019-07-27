@@ -3,4 +3,5 @@ description: Blog about development and related stuff
 url: 2mas.github.io
 baseurl: ""
 permalink: /:title/
+disqus: 2mas
 theme: jekyll-theme-cayman
