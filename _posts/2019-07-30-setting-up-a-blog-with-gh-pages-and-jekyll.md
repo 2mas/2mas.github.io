@@ -57,12 +57,21 @@ When using Docker Desktop on Windows I use PowerShell to start a container like 
 docker run --rm -it -v ${PWD}:/srv/jekyll -p 127.0.0.1:4000:4000 jekyll/jekyll:builder bash
 ```
 
-This leaves me in a terminal where i can run all commands i need like `bundle` 
-when changing stuff in Gemfile and testing things out. Ultimately to build and start the site i run 
+This leaves me in a terminal where i can run all commands i need like `bundle install` to install Ruby gems that are specified in Gemfile. (The .gif below is a bit trimmed, takes a little longer)
+
 ```bash
-jekyll serve --watch --force_polling
+bundle install
+```
+
+![bundle install][gif-bundle-install]
+
+Ultimately to build and start the site using the gems specified in Gemfile run:
+```bash
+bundle exec jekyll serve --watch --force_polling --host 0.0.0.0
 ```
 which starts a site and watches for changes. The site is now browsable at http://127.0.0.1:4000.
+
+![bundle exec jekyll serve][gif-bundle-exec]
 
 ### Using a theme and creating a post
 So at this point it's possible to make your own theme or use anything already hosted on GitHub as a remote theme. I choose to use a theme called [Minimal Mistakes][minimal-mistakes] as it gets me up and running fast with blog-posts, pagination, comments and looks nice :) There is some [starter-code][minimal-mistakes-starter] that shows how to set up common things, or have a look at [my repository][my-repository] to see my files.
@@ -76,6 +85,8 @@ So at this point it's possible to make your own theme or use anything already ho
 [github-pages-theme]:       https://help.github.com/en/articles/adding-a-jekyll-theme-to-your-github-pages-site-with-the-jekyll-theme-chooser
 [img-gh-pages-settings]:    /assets/images/gh-pages-settings.png
 [img-docker-share]:         /assets/images/docker-share-drives.png
+[gif-bundle-install]:       /assets/images/bundle-install.gif
+[gif-bundle-exec]:          /assets/images/bundle-exec-jekyll-serve.gif
 [minimal-mistakes]:         https://mmistakes.github.io/minimal-mistakes/
 [minimal-mistakes-starter]: https://github.com/mmistakes/mm-github-pages-starter
 [my-repository]:            https://github.com/2mas/2mas.github.io
