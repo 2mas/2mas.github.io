@@ -1,8 +1,80 @@
-title: 2mas devblog
+title: Thomas dev-blog
+title_separator: "|"
 description: Blog about development and related stuff
-url: 2mas.github.io
+url: "https://2mas.github.io"
 baseurl: ""
-permalink: /:title/
-disqus: 2mas
-google_analytics: UA-144546741-1
-theme: jekyll-theme-cayman
+
+# minimal mistakes
+search: false
+github_username: 2mas
+minimal_mistakes_skin: default
+remote_theme: mmistakes/minimal-mistakes
+repository: 2mas/2mas.github.io
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+author:
+  name   : "Thomas Welén"
+  avatar : "https://avatars3.githubusercontent.com/u/372362?s=460&v=4"
+  bio    : "Systems developer from Sweden."
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/2mas"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/2mas"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "2mas"
+
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "UA-144546741-1"
+    anonymize_ip: false # default
+
+category_archive:
+  type: liquid
+  path: /categories/
+
+tag_archive:
+  type: liquid
+  path: /tags/
