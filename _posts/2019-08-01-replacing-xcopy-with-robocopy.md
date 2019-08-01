@@ -38,13 +38,11 @@ About the final switch `/mt` this tells robocopy to run this in multiple-threads
 
 > The /MT parameter applies to Windows Server 2008 R2 and Windows 7.
 
-I'm testing this out on a later version of Windows anyway since the parameter is present. The default value when using only `/mt` is 8 threads, I'm going for 32 switch tells the command to (32 threads).
-
 When trying out single-threaded without the `/mt` the elapsed time is 3 minutes and 19 seconds:
 
 ![robocopy-single-thread][robocopy-single-thread]
 
-And multi-threaded with two cores the same operation gets down to 41 seconds:
+I'm testing this out on a later version of Windows anyway since the parameter is present. The default value when using only `/mt` is 8 threads, I'm going for 32 threads on a machine with two cores. The same operation gets down to 41 seconds:
 
 ![robocopy-multi-thread][robocopy-multi-thread]
 
