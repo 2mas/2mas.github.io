@@ -48,6 +48,8 @@ I'm testing this out on a later version of Windows anyway since the parameter is
 
 The switch is still supported in later versions of Windows and apparently works as expected, so I advice you to try it out if you need it anyway.
 
+This type of mirroring can be good for several reasons and could be part of a scheduled task for example. There is also a big difference in elapsed time when comparing `xcopy` to `robocopy`. `xcopy` took about an hour to complete a task big task, and after the switch to use the  `robocopy` command it completes in about two minutes, that's really a big difference.
+
 [xcopy]:                  https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/xcopy
 [robocopy]:               https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy
 [robocopy-single-thread]: /assets/images/robocopy-single-thread.png
