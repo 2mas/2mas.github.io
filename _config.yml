@@ -7,8 +7,8 @@ baseurl: ""
 # minimal mistakes
 search: false
 github_username: 2mas
-minimal_mistakes_skin: default
-remote_theme: mmistakes/minimal-mistakes@4.16.5
+minimal_mistakes_skin: "dirt"
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 repository: 2mas/2mas.github.io
 permalink: /:categories/:title/
 paginate: 5
