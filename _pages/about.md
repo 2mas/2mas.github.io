@@ -3,6 +3,6 @@ permalink: /about/
 title: "About Thomas"
 ---
 
-So I'm Thomas and I consider myself a systems developer. I have been writing code since about 2009 (late starter since I'm born in '83) and have been working professionaly as primarily a web-developer a majority of this time with focus on .NET.
+Hey! I'm Thomas and I consider myself a systems developer. I have been writing code since around 2009 and have been working professionaly a web-developer a majority of this time with focus on C# and cloud technologies.
 
-I'm living in Västerås, Sweden with my wife and two kids and currently works at Myndigheten för Yrkeshögskolan as a developer with responsibility of the overall systems architecture.
+I live in Västerås, Sweden with my wife and two kids and currently works as a systems developer.
