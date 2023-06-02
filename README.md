@@ -6,6 +6,6 @@ To run (powershell ${PWD})
 ```
 docker run -it -v="${PWD}:/srv/jekyll" -p 4000:4000 jekyll/jekyll bash
 # bundle update
-# jekyll serve --watch --force-polling
+# bundle exec jekyll serve --livereload --host 0.0.0.0 --force_polling
 ```
 Visit at http://localhost:4000
