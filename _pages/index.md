@@ -31,7 +31,7 @@ feature_row:
 {% assign posts = site.posts | limit 3 %}
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
-<h1 class="archive__item-title">Latest from the blog</h1>
+<h1>Latest from the blog</h1>
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
     {% include archive-single.html type=entries_layout %}
