@@ -28,12 +28,11 @@ feature_row:
 ---
 <!-- {% include feature_row %} -->
 
-{% assign posts = site.posts | limit 3 %}
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
 <h1>Latest from the blog</h1>
 <div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
+  {% for post in site.posts limit:3 %}
     {% include archive-single.html type=entries_layout %}
     <div class="list__item">
       <p class="page__meta">
