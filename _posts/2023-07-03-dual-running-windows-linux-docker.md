@@ -20,7 +20,7 @@ There is a way to pull and run Docker images for Linux while having Docker Deskt
 
 ![docker-experimental][docker-experimental]
 
-After this is done, there is a `--platform` parameter added to some commands to specify the platform to use for the image to be pulled and run. So to run a Linux image at this point from your Windows shell you can simply type something like `docker run --platform=Linux --it alpine sh` and it should fire up a Linux container. This is quick and convenient but it's still experimental and from my experience it doesn't work very well unfortunately.
+After this is done, there is a `--platform` parameter added to some commands to specify the platform to use for the image to be pulled and run. So to run a Linux image at this point from your Windows shell you can simply type something like `docker run --platform=linux -it alpine sh` and it should fire up a Linux container. This is quick and convenient but it's still experimental and from my experience it doesn't work very well unfortunately.
 
 ## Way 2: Installing docker into WSL 2
 By installing Docker into your WSL 2 distribution you can run Docker fully inside of your WSL 2 instead of relying on Docker Desktop to do the magic for you. From my point of view this  approach feels more stable.
