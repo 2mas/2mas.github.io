@@ -4,6 +4,13 @@ html {
   font-size: 18px;
 }
 
+.page__content {
+  @media (min-width: 768px) {
+      font-size: 16px;
+  }
+}
+
+
 // .masthead {
 //     background: $header-bg;
 //     .greedy-nav {

@@ -7,12 +7,6 @@ search: false
 
 $header-bg-color: #f9f9f9;
 
-.page__content {
-    @media (min-width: 768px) {
-        font-size: 18px;
-    }
-}
-
 .masthead {
     background-color: $header-bg-color;
     .greedy-nav {

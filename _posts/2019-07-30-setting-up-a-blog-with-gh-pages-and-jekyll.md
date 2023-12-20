@@ -7,7 +7,7 @@ categories:
 tags:
   - Jekyll
   - Docker
-  - GitHub-Pages
+  - GitHub
 ---
 
 So the time has come to create a blog after about ten years of coding. We’ll see how it goes. The idea is to share some toughts and ideas that comes up once in a while.

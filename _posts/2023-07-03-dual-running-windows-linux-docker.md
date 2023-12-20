@@ -6,7 +6,7 @@ categories:
   - blog
 tags:
   - Docker
-  - containers
+  - Containers
 ---
 
 This guide is for you guys that have the need to run both Windows and Linux containers simultaneously. There are a couple of ways this can be done, and I'll show the way I prefer and explain why.

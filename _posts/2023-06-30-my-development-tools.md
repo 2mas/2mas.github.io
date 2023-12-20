@@ -5,7 +5,7 @@ date: 2023-06-30T08:00:30-04:00
 categories:
   - blog
 tags:
-  - tooling
+  - Tooling
 ---
 Hello! I thought it would be good to start by explaining what I do at work. I think it's pretty much the same thing as you readers are doing if you're developers, but I'm usually starting the day with a team meeting to sync all members of the team what needs to be done during the day, discuss sprint scope and if there any issues that need to be dealt with.
 
